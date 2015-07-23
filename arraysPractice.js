@@ -60,7 +60,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
   //Code Here
+evenFinder = function (nums) {
+	for (var i = 0; i < nums.length; i++) {
+		if (nums[i] % 2 !=== 0) {
+			nums[i].remove;
+		}
+	};
+}
 
+console.log(evenFinder(nums));
 
 //Next problem
 
