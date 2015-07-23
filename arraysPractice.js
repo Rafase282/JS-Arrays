@@ -5,7 +5,10 @@ var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
 
   //Code Here
-
+first = function(arr) {
+	this.firstArg = arr[0];
+	return firstArg;
+};
 
 //Next problem
 
@@ -16,7 +19,10 @@ var arr = [40,50,60];
 
 
   //Code Here
-
+last = function(arr) {
+	this.lastArg = arr[arr.length - 1];
+	return lastArg;
+}
 
 //Next Problem
 
@@ -25,7 +31,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 
   //Code Here
-
+looper = function(family) {
+	this.family = family;
+	for (var i = 0; i < this.family.length; i++) {
+		alert(this.family[i]);
+	};
+}
 
 //Next problem
 
@@ -35,7 +46,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 //Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
 
   //Code Here
-
+reversedLooper = function (letters) {
+	for (var i = letters.length - 1; i >= 0; i--) {
+		alert(letters[i]);
+	};
+}
+reversedLooper(letters);
 
 //Next Problem
 
