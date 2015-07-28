@@ -97,6 +97,21 @@ function divider(nums,evens,odds) {
 }
 console.log(divider(nums,evens,odds));
 
+//Alternate code by xcadaverx  https://github.com/xcadaverx
+function divider(nums,evens,odds) {
+	evens = nums.filter(function(elem) {
+	    return Boolean(elem % 2 === 0);
+	});
+	odds = nums.filter(function(elem) {
+	    return Boolean(elem % 2 !== 0);
+	});
+	nums = [];
+	nums.push(evens);
+	nums.push(odds);
+	return nums;
+}
+console.log(divider(nums,evens,odds));
+
 //Next Problem
 
 
