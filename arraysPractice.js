@@ -246,7 +246,7 @@ function longest(arr1,arr2){
     }else {return arr2}
 }
 console.log('longest');
-longest(arr1,arr2);
+console.log(longest(arr1,arr2));
 
 /*As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example)
@@ -260,7 +260,7 @@ function both(arr1,arr2){
     return arr3;
 }
 console.log('concat');
-both(arr1,arr2);
+console.log(both(arr1,arr2));
   
   
   
