@@ -190,7 +190,15 @@ addItem(myGroceryList, 'Jerky');
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
-
+  function maker() {
+      var arr = [];
+      for (var n = 1; n <=215; n++){
+          arr.push(n);
+      }
+      return arr;
+  }
+  
+  maker();
 
 
 //Next Problem
