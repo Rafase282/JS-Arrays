@@ -83,7 +83,19 @@ var odds = [];
 
 
   //Code Here
-
+function divider(nums,evens,odds) {
+	var modArray = [];
+	for (var i = 0; i < nums.length; i++) {
+		if (nums[i] % 2 === 0) {
+			evens.push(nums[i]);
+		} else {
+		    odds.push(nums[i]);
+		}
+	}
+    modArray.push(evens,odds);
+	return modArray;
+}
+console.log(divider(nums,evens,odds));
 
 //Next Problem
 
