@@ -209,7 +209,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
   //Code Here
+function addTen(numbers) {
+    for (var n in numbers){
+        numbers[n] = parseInt(numbers[n])+10;
+    }
+    return numbers;
+}
 
+addTen(numbers);
 
 
 //Next Problem
@@ -230,7 +237,13 @@ for(var i = 0; i < num2; i++){
 //Write a function that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
 
   //Code Here
+function longest(arr1,arr2){
+    if (arr1.length > arr2.length){
+        return arr1;
+    }else {return arr2}
+}
 
+longest(arr1,arr2);
 
 /*As a continuation of the previous problem, write another function called 'both'.
   Your 'both' function will be given two arguments, arr1 and arr2 (from the previous example)
